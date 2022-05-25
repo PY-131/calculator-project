@@ -21,7 +21,8 @@ class TestCalculatorMethods(unittest.TestCase):
     def test_sub(self):
 
         self.assertEqual(self.calc.sub(3,3), 0, "answer should be zero")
-
+        self.assertEqual(self.calc.sub(-5,3), -8, "answer should be -8")
+    @unittest.skip('Skipped multiply tests')
     def test_multi(self):
 
         self.assertEqual(self.calc.multi(3,3), 9, "answer should be nine")
